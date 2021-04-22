@@ -17,7 +17,7 @@ def bf(j,N,pi):
         for j in N:
             bf(j,copy.copy(N),copy.copy(pi))
     else:
-         Cmax=CMAX(pi,n,m)
+         Cmax,C=CMAX(pi,n,m)
          #print(Cmax)
          if Cmax<Ub:
             Ub=Cmax
